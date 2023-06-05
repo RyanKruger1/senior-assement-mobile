@@ -19,12 +19,12 @@ public class RadioButtonScreen {
     }
 
     public void clickRadioButton(int value) {
-        WebElement radioButton = _driver.findElement(By.id("com.bitbar.testdroid:id/radio" + value));
+        WebElement radioButton = _driver.findElement(By.id(Elements.RADIO_BUTTON_ID + value));
         radioButton.click();
     }
 
     public void enterName(String text) {
-        WebElement textField = _driver.findElement(By.id("com.bitbar.testdroid:id/editText1"));
+        WebElement textField = _driver.findElement(By.id(Elements.NAME_FIELD_ID));
         textField.sendKeys(text);
     }
 
@@ -40,6 +40,6 @@ public class RadioButtonScreen {
     }
 
     public WebElement instantiateButton() {
-        return _driver.findElement(By.id("com.bitbar.testdroid:id/button1"));
+        return _driver.findElement(By.id(Elements.BUTTON_ID));
     }
 }

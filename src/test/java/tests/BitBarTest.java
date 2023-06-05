@@ -1,5 +1,6 @@
 package tests;
 
+import com.google.gson.JsonObject;
 import core.AppiumDriverClient;
 import core.AppiumTestListener;
 import org.testng.Assert;
@@ -16,11 +17,12 @@ public class BitBarTest extends AppiumDriverClient {
     @BeforeMethod
     public void pageSetup() {
         radioButtonScreen = new RadioButtonScreen(driver);
+        testData = reader.readConfigData();
     }
 
     @Test(dataProviderClass = ScenarioDataProvider.class, dataProvider = "scenarios")
     public void selectAnswerAndValidateOutput(int id, String outputMessage) {
-        radioButtonScreen.enterName("Ryan");
+        radioButtonScreen.enterName(testData.get("name").getAsString());
         radioButtonScreen.clickRadioButton(id);
         resultScreen = radioButtonScreen.clickButton();
         Assert.assertEquals(resultScreen.getTextAnswer(), outputMessage);

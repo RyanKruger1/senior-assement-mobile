@@ -13,7 +13,7 @@ public class ResultScreen {
     }
 
     public String getTextAnswer() {
-        WebElement resultText = _driver.findElement(By.id("com.bitbar.testdroid:id/textView1"));
+        WebElement resultText = _driver.findElement(By.id(Elements.ANSWER_LABEL_ID));
         return resultText.getText();
     }
 }

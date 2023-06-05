@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class AppiumDriverClient {
     public static JsonObject testData;
-    public static core.JsonReader reader = new JsonReader();
+    public static JsonReader reader = new JsonReader();
     public static AppiumDriver driver;
 
     @BeforeMethod
