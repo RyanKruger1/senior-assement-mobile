@@ -2,9 +2,10 @@
 
 This repository is created to showcase the authors Mobile automation testing abilities.
 
-This repo consist of a Java mobile automation framework, powered by appium.
+This repo consist of a Java mobile automation framework, powered by appium. The only mobile operating system being used is **Android**.
 
 Requirements:
+ - Java Installed
  - Appium to be installed
  - Android Studio 
  - AVD Emulator device created
@@ -35,4 +36,7 @@ To run the automation tests on macOS, follow these steps:
 ```
 
 After the build an "OUT" folder will be generated in the project root folder, it will be generated with a html file containing a breakdown of the test that 
-were run
+were run.
+
+# Note:
+This framework was create and tested on a windows machine. MacOS is catered for but has not been tested upon.
