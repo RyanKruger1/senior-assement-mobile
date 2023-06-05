@@ -34,5 +34,5 @@ To run the automation tests on macOS, follow these steps:
 ./gradlew clean test
 ```
 
-After the build an "OUT" in the project root folder, it will be generated with a html file containing a breakdown of the test that 
+After the build an "OUT" folder will be generated in the project root folder, it will be generated with a html file containing a breakdown of the test that 
 were run
