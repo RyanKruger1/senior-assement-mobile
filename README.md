@@ -32,6 +32,7 @@ To run the automation tests on macOS, follow these steps:
 6. Run the following command to execute the tests:
 ```
 ./gradlew clean test
+```
 
 After the build an "OUT" in the project root folder, it will be generated with a html file containing a breakdown of the test that 
 were run
