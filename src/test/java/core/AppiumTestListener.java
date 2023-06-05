@@ -3,7 +3,6 @@ package core;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -20,7 +19,6 @@ public class AppiumTestListener implements ITestListener {
         pw.append("</table>");
         pw.append("</html>");
         pw.close();
-
     }
 
     @Override
@@ -40,7 +38,7 @@ public class AppiumTestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult Result) {
-        addToReportTable("START", Result.getName(), null);
+        addToReportTable("START", Result.getName(),"Data Used: " + Result.getParameters()[0].toString() + ":" + Result.getParameters()[1].toString());
     }
 
     @Override
