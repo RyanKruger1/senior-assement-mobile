@@ -1,6 +1,6 @@
 # Senior Assessment: Section 3 - Mobile
 
-This repository is created to showcase the authors Mobile automation testing abilities.
+This repository is created to showcase the authors _mobile automation testing abilities_.
 
 This repo consist of a Java mobile automation framework, powered by appium. The only mobile operating system being used is **Android**.
 
@@ -39,4 +39,4 @@ After the build an "OUT" folder will be generated in the project root folder, it
 were run.
 
 # Note:
-This framework was create and tested on a windows machine. MacOS is catered for but has not been tested upon.
+This framework was created and tested on a windows machine. MacOS is catered for but has not been tested upon.
