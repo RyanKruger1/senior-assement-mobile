@@ -10,7 +10,6 @@ public class ResultScreen {
 
     public ResultScreen(AppiumDriver driver) {
         _driver = driver;
-
     }
 
     public String getTextAnswer() {
